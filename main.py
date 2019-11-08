@@ -14,7 +14,9 @@ class Example(Frame):
         self.draw_triangle(canvas, 0, 300, 50, 350, 50, 300, "green")
         self.draw_triangle(canvas, 50, 300, 50, 350, 100, 300, "blue")
         self.draw_triangle(canvas, 0, 300, 50, 250, 50, 300, "red")
-        self.draw_triangle(canvas, 50, 300, 50, 250, 100, 300, "yellow")
+        
+        self.draw_triangle(canvas, 50+150, 300, 50+150, 350, 100+150, 300, "blue")
+        self.draw_triangle(canvas, 0+150, 300, 50+150, 250, 50+150, 300, "red")
         canvas.pack(fill=BOTH, expand=1)
 
     def draw_triangle(self, master, x1, y1, x2, y2, x3, y3, color):
