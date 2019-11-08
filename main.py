@@ -8,9 +8,11 @@ class Example(Frame):
         self.master.title("geometry")
         self.pack(fill=BOTH, expand=1)
         canvas = Canvas(self)
-        self.draw_triangle(canvas, 55, 85, 155, 85, 105, 180, "red")
-        self.draw_square(canvas, 10, 10, 80, "blue")
+        self.draw_square(canvas, 50, 50, 80, "blue")
+        #self.draw_romb(canvas, 200, 200, 350, 200, 400, 400, 250, 400, "green")
+        self.draw_triangle(canvas, 50, 50, 130, 50, 90, 0, "red")
         self.draw_romb(canvas, 200, 200, 350, 200, 400, 400, 250, 400, "green")
+        self.draw_triangle(canvas, 0, 300, 50, 350, 50, 300, "green")
         canvas.pack(fill=BOTH, expand=1)
 
     def draw_triangle(self, master, x1, y1, x2, y2, x3, y3, color):
@@ -29,7 +31,7 @@ class Example(Frame):
 def main():
     root = Tk()
     ex = Example()
-    root.geometry("400x250+300+300")
+    root.geometry("400x250+800+800")
     root.mainloop()
 
 
